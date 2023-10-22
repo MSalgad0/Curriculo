@@ -1,0 +1,27 @@
+{
+    "name": "Currículo MS",
+    "short_name": "MS",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/index.html",
+    "icons": [
+        {
+            "src": "manifest/appstore.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "manifest/playstore.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "manifest/logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

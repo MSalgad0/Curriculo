@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" class=""light>
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#181A1B">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo</title>
+</head>
+
+
+<body>
+    
+    <header> 
+        <!-- Foto -->
+        <div class="foto">
+
+        <img src="./img/WhatsApp Image 2023-10-10 at 22.56.10.jpeg" alt="foto01">
+        <span>@Msalgado</span>
+
+        </div>
+
+        <div id="switch"  onclick="toggleMode()">
+            <button></button>
+            
+            <span></span>
+        </div>
+       
+        
+    </header>
+
+    <div class="link"> 
+        <!-- 4 Botões -->
+        
+            <a href="#">Currículo</a>
+        
+            <a href="#">Projetos</a>
+           
+            <a href="#">Certificados</a>
+           
+            <a href="#">Sobre mim</a>
+         </div>
+
+    <div class="icone">
+        <a href="https://github.com/MSalgad0" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="www.linkedin.com/in/matheus-salgado-519981210/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="mailto:matheus0509@live.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
+
+    </div>
+
+<footer>
+    <!-- Frase -->
+    <span> Feito com  <img src="./img/coração.png" alt="">  por Matheus </span>
+</footer>  
+
+
+
+      <script>
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            if ('serviceWorker' in navigator) {
+                console.log('has serviceworker');
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('serviceWorker.js')
+                        .then((registration) => {
+                            console.log('Service worker registered.', registration);
+                        });
+                });
+            }
+                console.log("Your browser not supports serviceWorkers");
+            }
+        );
+    </script>
+     
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+       <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+       <script src="./script.js"></script>
+     
+</body>
+</html>
+
+
